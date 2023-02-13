@@ -88,7 +88,7 @@ void PrintImage(int[,] image)
         {
             //Console.Write($"{image[i, j]} ");
             if (image[i, j] == 0) Console.Write($" ");
-            else Console.Write($"+");
+            else Console.Write($"2");
         }
         Console.WriteLine();
     }
@@ -108,10 +108,9 @@ void FillImage(int row, int col)
 
 PrintImage(pic);     //pic  - это исходный двумерный массив с контуром изображения
 FillImage(13, 13);   // 13, 13 - точка внутри изображения с координатами 13, 13
-
+PrintImage(pic);
 
 /*
-double Factorial(int n)
 {
     // 1! = 1
     // 0! = 1
@@ -126,7 +125,6 @@ for (int i = 1; i < 40; i++)
 
 // Console.WriteLine(Factorial(40));   // 3! = 3 * 2 * 1 = 6
 
-*/
 
 /*
 
